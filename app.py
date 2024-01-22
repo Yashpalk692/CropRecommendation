@@ -1,3 +1,11 @@
+import subprocess
+import sys
+import streamlit as st
+
+# Run the command to upgrade pip
+upgrade_pip_command = f"{sys.executable} -m pip install --upgrade pip"
+subprocess.run(upgrade_pip_command, shell=True)
+
 import streamlit as st
 import joblib
 
